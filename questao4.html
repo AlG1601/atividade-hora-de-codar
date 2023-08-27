@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/questao4.css">
+    <title>Questão 4</title>
+    <script>
+        function rectangle()
+        {
+            var base = prompt("Informe o valor da base:");
+            var altura = prompt("Informe o valor da altura:");
+            base = parseFloat(base);
+            altura = parseFloat(altura);
+            var area = base*altura;
+            alert("O valor da área é " + area)
+        }
+
+        function square()
+        {
+            var lado = prompt("Informe o valor do lado:");
+            lado = parseFloat(lado);
+            var area = lado*lado;
+            alert("O valor da área é " + area)
+        }
+        function lozenge()
+        {
+            var diagmaior = prompt("Informe o valor da diagnoal maior:");
+            var diagmenor = prompt("Informe o valor da diagonal menor:");
+            diagmenor = parseFloat(diagmenor);
+            diagmaior = parseFloat(diagmaior);
+            var area = (diagmaior*diagmenor)/2;
+            alert("O valor da área é " + area)
+        }
+
+        function trapeziu()
+        {
+            var bmaior = prompt("Informe o valor da base maior:");
+            var bmenor = prompt("Informe o valor da base menor:");
+            var h = prompt("Informe o valor da altura:")
+            bmaior = parseFloat(bmaior);
+            bmenor = parseFloat(bmenor);
+            h = parseFloat(h)
+            var area = ((bmaior+bmenor)*h)/2;
+            alert("O valor da área é " + area)
+        }
+
+        function parallelogram()
+        {
+            var base = prompt("Informe o valor da base:");
+            var altura = prompt("Informe o valor da altura:");
+            base = parseFloat(base);
+            altura = parseFloat(altura);
+            var area = base*altura;
+            alert("O valor da área é " + area)
+        }
+
+        function triangle()
+        {
+            var base = prompt("Informe o valor da base:");
+            var altura = prompt("Informe o valor da altura:");
+            base = parseFloat(base);
+            altura = parseFloat(altura);
+            var area = (base*altura)/2;
+            alert("O valor da área é " + area)
+        }
+
+        function circle()
+        {
+            var raio = prompt("Informe o valor do raio:");
+            raio = parseFloat(raio);
+            var area = 3.1416*raio**2;
+            alert("O valor da área é " + area)
+        }
+    </script>
+</head>
+<body>
+    <h1>Clique em uma das formas abaixo para calcular a área</h1>
+    <div class="container">
+        <button onclick="rectangle()"><div class="rectangle"></div></button>
+        <button onclick="square()"><div class="square"></div></button>
+        <button onclick="lozenge()"><div class="lozenge"></div></button>
+        <button onclick="trapeziu()"><div class="trapeziu"></div></button>
+        <button onclick="parallelogram()"><div class="parallelogram"></div></button>
+        <button onclick="triangle()"><div class="triangle"></div></button>
+        <button onclick="circle()"><div class="circle"></div></button>
+    </div>
+</body>
+</html>
